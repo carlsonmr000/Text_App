@@ -28,15 +28,15 @@ quote = quotes_list[random.randint(0, len(quotes_list)-1)]
 #                            body=quote
 #                            )
 
+# client.messages.create(to="+17738697713",
+#                            from_=+16082003114,
+#                            body=quote
+#                            )
+
 client.messages.create(to="+16083462744",
                            from_=+16082003114,
                            body=quote
                            )
-
-# client.messages.create(to="+16084498328",
-#                            from_=+16082003114,
-#                            body=quote
-#                            )
 
 # send a message in the morning
 # schedule.every().day.at("08:00").do(send_message, INSPIRATIONAL_QUOTES)
