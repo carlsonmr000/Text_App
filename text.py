@@ -1,4 +1,4 @@
-import random, schedule
+import random
 from twilio.rest import Client
  
 
@@ -19,22 +19,22 @@ INSPIRATIONAL_QUOTES = [
 # def send_message(
 quotes_list=INSPIRATIONAL_QUOTES
 
-account = "ACf6c0cdfc33ce0d5a476c85d0126c6df8"
-token = "51a6307405bcb87f2f68e7ea1679785f"
+account = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 client = Client(account, token)
 quote = quotes_list[random.randint(0, len(quotes_list)-1)]
-# client.messages.create(to="+17733325792",
-#                            from_=+16082003114,
+client.messages.create(to="+XXXXXXXXXXX",
+                           from_=+X(XXX)XXX-3114,
+                           body=quote
+                           )
+
+# client.messages.create(to="+XXXXXXXXXXX",
+#                            from_=+XXXXXXXXXXX,
 #                            body=quote
 #                            )
 
-# client.messages.create(to="+17738697713",
-#                            from_=+16082003114,
-#                            body=quote
-#                            )
-
-client.messages.create(to="+16083462744",
-                           from_=+16082003114,
+client.messages.create(to="+XXXXXXXXXXX",
+                           from_=+XXXXXXXXXXX,
                            body=quote
                            )
 
